@@ -1,0 +1,10 @@
+@mixin link($color, $typo){
+  text-decoration: none;
+  color: $color;
+  font-family: $typo;
+}
+
+@mixin link-hover{
+  text-decoration: underline;
+  text-shadow: 0 1px 4px $hover;
+}

@@ -1,0 +1,57 @@
+/*ARCHIVOS EXTERNOS*/
+@import 'variables/_colors.scss';
+@import 'mixins/_links.scss';
+@import 'variables/_typography.scss';
+@import 'mixins/_flex.scss';
+@import 'mixins/_button.scss';
+@import 'tables/_table.scss';
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header{
+  width: 100%;
+  padding: 20px;
+  background: $barra-nav-color;
+  font-family: $barra-nav;
+  @include flex(row, space-between, center);
+
+  .logo{
+    a{
+      @include link($texto-oscuro, $barra-logo);
+      &:hover{
+        @include link-hover;
+      }
+    }
+  }
+
+  .sesion{
+    @include flex(row, space-around, center);
+
+    .btn{
+      @include button;
+      @include link($texto-oscuro, $barra-nav);
+      display: inline-block;
+      margin: 0 10px;
+    }
+
+    .btn-load{
+      @include border-button(#21E712);
+
+      &:hover{
+        @include hover-button(#21E712, $texto-oscuro);
+      }
+    }
+
+    .btn-get-in{
+      @include border-button(#6D35AD);
+
+      &:hover{
+        @include hover-button(#6D35AD, $texto-oscuro);
+      }
+    }
+  }
+}

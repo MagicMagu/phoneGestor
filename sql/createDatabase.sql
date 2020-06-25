@@ -1,0 +1,16 @@
+CREATE TABLE users(
+  userId INT NOT NULL AUTO_INCREMENT,
+  user VARCHAR(100) NOT NULL,
+  password VARCHAR(100) NOT NULL,
+  email VARCHAR(100) NOT NULL,
+  PRIMARY KEY(userId)
+)ENGINE=InnoDB;
+
+CREATE TABLE contact(
+  contactId INT NOT NULL AUTO_INCREMENT,
+  name VARCHAR(40) NOT NULL,
+  phone VARCHAR(12) NOT NULL,
+  userId INT,
+  PRIMARY KEY(contactId),
+  FOREIGN KEY(userId) REFERENCES users(userId)
+)ENGINE=InnoDB;

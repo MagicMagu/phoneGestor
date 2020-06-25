@@ -1,0 +1,25 @@
+table{
+  border: none;
+  background: #fefefe;
+
+  tr{
+    border-bottom: 1px solid #D2C7C7;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    &:nth-child(2n){
+      background: #B0DFE5;
+    }
+
+    th, td{
+      text-align: center;
+      color: $texto-claro;
+
+      &:hover{
+      box-shadow: 0 1px 4px $hover;
+      }
+
+    }
+  }
+}
