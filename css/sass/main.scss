@@ -55,3 +55,64 @@ header{
     }
   }
 }
+
+.contenedor{
+  width: 400px;
+  margin: 110px auto 0 auto;
+  border: 1px solid #000000;
+  border-radius: 6px;
+  @include flex(column, space-around, center);
+
+  .form-header{
+    width: 100%;
+    background: $footer;
+    color: $texto-oscuro;
+    font-family: $barra-logo;
+    font-size: 1.5em;
+    text-align: center;
+    @include flex(row, center, center);
+  }
+
+  .flex-columna{
+    width: 100%;
+    padding: 30px 0;
+    @include flex(column, space-evenly, center);
+
+    .flex{
+      width: 100%;
+      margin: 10px 0;
+      font-size: 1.3em;
+      @include flex(column, space-between, center);
+
+      label, input{
+        margin: 5px 0;
+        font-family: $sitio;
+      }
+
+      .inputs{
+        padding: 7px 20px;
+        border: 1px solid #CCC;
+        border-radius: 5px;
+        background: none;
+        color: $texto-claro;
+        font-size: 1em;
+        text-align: center;
+
+        &:focus{
+          border-radius: 5px;
+          border: 1px solid #CCC;
+          box-shadow: 0 1px 4px $hover; 
+        } 
+      }
+    }
+
+    .btn{
+      @include button;
+      @include edit-button(#5DA01C, $texto-oscuro);
+
+      &:hover{
+        @include hover-button(#66C21B, $texto-oscuro);
+      }
+    }
+  }
+}

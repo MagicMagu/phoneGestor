@@ -7,6 +7,9 @@
   <title>PhoneGestor</title>
 </head>
 <body>
-  
+  <?php
+    require_once('models/db/connection.php'); 
+    require_once('controller/log_in/controllerRegistry.php');
+  ?>
 </body>
 </html>
