@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <!--Estilos-->
@@ -9,7 +9,7 @@
 <body>
   <?php
     require_once('models/db/connection.php'); 
-    require_once('controller/log_in/controllerRegistry.php');
+    require_once('controller/log_in/controllerLogin.php');
   ?>
 </body>
 </html>
