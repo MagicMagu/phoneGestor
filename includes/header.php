@@ -14,11 +14,11 @@
     <?php if(!empty($userData) && isset($_SESSION['user_id'])) {?>
       <div class="sesion">
         <div class="nav-routes">
-          <a href="#">Perfil</a>
-          <a href="#">Contactos</a>
+          <a href="#" class="link">Perfil</a>
+          <a href="#" class="link">Contactos</a>
         </div>
         <div class="user-sesion">
-          <span><?php echo $userData['user']; ?></span>
+          <span class="userName"><?php echo $userData['user']; ?></span>
           <a href="../../phoneGestor/models/log_in/log_outUser.php" class="btn">Cerrar sesión</a>
         </div>
       </div>

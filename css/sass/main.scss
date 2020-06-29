@@ -36,6 +36,36 @@ header{
       @include link($texto-oscuro, $barra-nav);
       display: inline-block;
       margin: 0 10px;
+
+      &:hover{
+        @include hover-button(#635959, #FFFFFF);
+      }
+    }
+
+    .nav-routes{
+      @include flex(row, space-between, center);
+      margin: 0 40px;
+
+      .link{
+        padding: 10px;
+        @include link($texto-oscuro, $barra-nav);
+
+        &:hover{
+          @include link-hover;
+        }
+      }
+    }
+
+    .user-sesion{
+      @extend .nav-routes;
+      margin: 0 0 0 10px;
+
+      .userName{
+        font-family: Arial;
+        color: $texto-oscuro;
+        padding: 5px;
+        margin-right: 10px;
+      }
     }
 
     .btn-load{
