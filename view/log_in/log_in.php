@@ -2,13 +2,15 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="../../css/compile/main.css">
   <title>PhoneGestor</title>
 </head>
 <body>
 
-  <?php if(!empty($message) && $message != 'Todo correcto') {?>
+  <?php if(!empty($message)) {?>
     <p><?php echo $message; ?></p>
   <?php } ?>
+
   
   <div class="contenedor">
     <header class="form-header">
