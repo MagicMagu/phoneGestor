@@ -89,7 +89,7 @@ header{
 .contenedor{
   width: 400px;
   margin: 110px auto 0 auto;
-  border: 1px solid #000000;
+  border: 1px solid $bordes;
   border-radius: 6px;
   @include flex(column, space-around, center);
 
@@ -160,5 +160,30 @@ footer{
     font-family: $sitio;
     text-align: center;
     font-size: 1.5ex;
+  }
+}
+
+.div{
+  @include flex(column, space-around, center);
+
+  header{
+    @include flex(row, space-around, center);
+    background: $barra-nav-color;
+    color: $texto-oscuro;
+    font-family: $barra-logo;
+    text-align: center;
+
+    a{
+      @include button;
+      @include border-button($bordes);
+      @include link($bordes, $barra-nav);
+      position: absolute;
+      left: 100px;
+      display: blocK;
+
+      &:hover{
+        @include hover-button($bordes, $texto-claro);
+      } 
+    }
   }
 }
