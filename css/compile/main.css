@@ -195,4 +195,19 @@ header .sesion .btn-get-in:hover {
   color: #FFFFFF;
 }
 
+footer {
+  width: 100%;
+  margin-top: 10px;
+  padding: 5px;
+  position: absolute;
+  bottom: 0;
+  background: #23272a;
+  color: #FFFFFF;
+}
+footer p {
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 1.5ex;
+}
+
 /*# sourceMappingURL=main.css.map */
