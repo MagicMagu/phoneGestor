@@ -15,17 +15,17 @@
       <div class="sesion">
         <div class="nav-routes">
           <a href="#" class="link">Perfil</a>
-          <a href="#" class="link">Contactos</a>
+          <a href="<?php echo $routes['index/contact'];?>?id=<?php echo $userData['userId'];?>" class="link">Contactos</a>
         </div>
         <div class="user-sesion">
           <span class="userName"><?php echo $userData['user']; ?></span>
-          <a href="../../phoneGestor/models/log_in/log_outUser.php" class="btn">Cerrar sesión</a>
+          <a href="<?php echo $routes['index/logout']?>" class="btn">Cerrar sesión</a>
         </div>
       </div>
     <?php }else{ ?>
       <div class="sesion">
-        <a href="<?php echo $routes['login']; ?>" class="btn btn-load">Iniciar Sesión</a>
-        <a href="<?php echo $routes['registry']; ?>" class="btn btn-get-in">Registrarse</a>
+        <a href="<?php echo $routes['index/login']; ?>" class="btn btn-load">Iniciar Sesión</a>
+        <a href="<?php echo $routes['index/registry']; ?>" class="btn btn-get-in">Registrarse</a>
       </div>
     <?php } ?>
   </header>

@@ -186,4 +186,35 @@ footer{
       } 
     }
   }
+
+  & > .btn-create{
+    margin-top: 40px;
+    @include button;
+    @include edit-button(#38457B, $texto-oscuro);
+    @include link($texto-oscuro, $sitio);
+
+    &:hover{
+      @include hover-button(#3A5578, $texto-oscuro);
+    }
+  }
+
+  .btn-edit{
+    @include button;
+    @include border-button(#ECE90F);
+    @include link(#ECE90F, $sitio);
+
+    &:hover{
+      @include hover-button(#ECE90F, $texto-oscuro);
+    }
+  }
+
+  .btn-delete{
+    @include button;
+    @include border-button(#EF0E0E);
+    @include link(#EF0E0E, $sitio);
+
+    &:hover{
+      @include hover-button(#EF0E0E, $texto-oscuro);
+    }
+  }
 }
