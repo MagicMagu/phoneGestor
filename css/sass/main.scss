@@ -217,4 +217,42 @@ footer{
       @include hover-button(#EF0E0E, $texto-oscuro);
     }
   }
+
+  .btn-group{
+    display: block;
+    padding: 20px;
+
+    .btn{
+      display: block;
+      @include button;
+      margin: 0 10px;
+    }
+
+  }
+
+  .flex{
+    @include flex(row, space-evenly, center);
+    margin-top: 20px;
+
+    .btn-edit{
+      @include button;
+      @include border-button(#ECE90F);
+      @include link(#ECE90F, $sitio);
+
+      &:hover{
+        @include hover-button(#ECE90F, $texto-oscuro);
+      }
+    }
+
+    .btn-pass{
+      @include button;
+      @include border-button(#EE1620);
+      @include link(#EE1620, $sitio);
+
+      &:hover{
+        @include hover-button(#EE1620, $texto-oscuro);
+      }
+    }
+  }
 }
+

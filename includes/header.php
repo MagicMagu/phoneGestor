@@ -14,7 +14,7 @@
     <?php if(!empty($userData) && isset($_SESSION['user_id'])) {?>
       <div class="sesion">
         <div class="nav-routes">
-          <a href="#" class="link">Perfil</a>
+          <a href="<?php echo $routes['index/profile'];?>?id=<?php echo $userData['userId'];?>" class="link">Perfil</a>
           <a href="<?php echo $routes['index/contact'];?>?id=<?php echo $userData['userId'];?>" class="link">Contactos</a>
         </div>
         <div class="user-sesion">
