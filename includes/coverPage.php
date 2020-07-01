@@ -2,11 +2,12 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet"  href="../../phoneGestor/css/compile/main.css">
+  <link rel="stylesheet"  href="../css/compile/main.css">
   <title>PhoneGestor</title>
 </head>
 <body>
-  <main class="slider">
+  <main class="slide">
+    <button type="button" id="back" class="transparent"></button>
     <div id="sl-1" class="slide-item">
       <h1>Phone Gestor</h1>
       <h2>El Gestor de números de telefono número 1 del Mundo</h2>
@@ -19,6 +20,10 @@
       <h2>Facil de utilizar</h2>
       <p>Esta herramienta te permitira mantener tus números de telefonos seguros y disponibles en todo momento, pero tambien te permite gestionar los mismos de una manera rapida, eficaz y eficientemente, sin necesidad de realizar gran cantidad de cosas</p>
     </div>
+    <button type="button" id="next" class="transparent"></button>
   </main>
+
+  <script src="../../phoneGestor/librarie/jquery/jquery-3.5.1.min.js"></script>
+  <script src="../../phoneGestor/js/slideImage.js"></script>
 </body>
 </html>

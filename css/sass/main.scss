@@ -18,6 +18,7 @@ header{
   background: $barra-nav-color;
   font-family: $barra-nav;
   @include flex(row, space-between, center);
+  z-index: 2;
 
   .logo{
     a{
@@ -155,6 +156,7 @@ footer{
   bottom: 0;
   background: $footer;
   color: $texto-oscuro;
+  z-index: 2;
 
   p{
     font-family: $sitio;
@@ -256,3 +258,94 @@ footer{
   }
 }
 
+.slide{
+  @include flex(row, space-around, center);
+  margin: 10px;
+  padding: 20px;
+
+  .slide-item{
+    @include flex(column, center, center);
+    color: $texto-oscuro;
+    background: $barra-nav-color;
+    padding: 20px;
+    width: 100%;
+    height: 570px;
+    border-radius: 8px;
+
+    &:nth-child(2n){
+      background: $footer;
+    }
+
+    h1{
+      font-size: 4em;
+      font-family: $barra-logo;
+    }
+
+    h2{
+      font-size: 2em;
+      font-family: $sitio;
+    }
+  }
+
+  button{
+    background: none;
+    border: none;
+    padding: 20px;
+    margin: 0;
+    position: absolute;
+    height: 85%;
+    z-index: 0;
+    bottom: 10px;
+    top: 80px;
+
+    &:hover{
+      box-shadow: 0 1px 4px $bordes;
+      background: rgba(99%, 99%, 99%, .6);
+    }
+  }
+
+  button#back{
+    left: 0;
+  }
+
+  button#next{
+    right: 0;
+  }
+
+  & #sl-1{
+    background-image: url("../../../phoneGestor/assets/image/Comunicación-sentimental-a-través-del-teléfono-celular.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #sl-2{
+    background-image: url("../../../phoneGestor/assets/image/Cinco-errores-que-hacen-que-tu-teléfono-sea-menos-seguro-tecnolocura.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    h2{
+      font-size: 4em;
+      font-family: $barra-logo;
+    }
+    p{
+      font-size: 2em;
+      font-family: $barra-nav;
+    }
+  }
+
+  #sl-3{
+    background-image: url("../../../phoneGestor/assets/image/3379.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    h2{
+      font-size: 4em;
+      font-family: $barra-logo;
+    }
+    p{
+      font-size: 2em;
+      font-family: $barra-nav;
+    }
+  }
+}
