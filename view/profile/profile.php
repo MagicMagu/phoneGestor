@@ -25,7 +25,7 @@
     </table>
     <div class="btn-group flex">
       <a href="<?php echo $routes['index/profile/editProfile']?>?id=<?php echo $myData['userId']?>" class="btn btn-edit">Editar Datos</a>
-      <a href="#" class="btn btn-pass">Editar Contraseña</a>
+      <a href="<?php echo $routes['index/profile/editPassword']?>?id=<?php echo $myData['userId']?>" class="btn btn-pass">Editar Contraseña</a>
     </div>
   </div>
   <?php require_once('c:/xampp/htdocs/phoneGestor/includes/footer.php'); ?>

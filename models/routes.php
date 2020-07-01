@@ -11,4 +11,5 @@
   $routes["index/contact/deleteContact"] = '../../../phoneGestor/models/contacts/deleteContact.php';
   $routes["index/profile"] = '../../phoneGestor/controller/profile/controllerProfile.php';
   $routes["index/profile/editProfile"] = '../../../phoneGestor/controller/profile/controllerEdit.php';
+  $routes["index/profile/editPassword"] = '../../../phoneGestor/controller/profile/controllerPass.php';
 ?>
